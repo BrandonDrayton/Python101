@@ -60,5 +60,5 @@ print(divider)
 # You can use your own name or someone else's.
 #  Use those two variables to print a greeting that uses the firstname and lastname variables in the output.
 
-#  f strings
+#  f strings makes spaces and punctuation easier
 print(f"{first_name[0]}. {last_name}")
