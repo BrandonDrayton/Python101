@@ -1,5 +1,9 @@
 noun = input("Enter a noun: ")
-verb =input("Enter a present-tense verb: ")
-name = input("Enter a name: ")
+pt_verb = input("Enter a present-tense verb: ")
+name = input("Enter a name ")
 
-madlib = "There once was a "
+def madlib(noun, pt_verb, name):
+    print(f""" In a galaxy far far away, there was {name} who {pt_verb} around the {noun}. 
+    Everytime {name} {pt_verb} away, the {noun} would fall down""")
+
+madlib(noun, pt_verb, name)
