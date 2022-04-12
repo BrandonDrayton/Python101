@@ -22,7 +22,7 @@ while True:
         print(todo_list)
         task_validation = input("Is this correct? ")
         if task_validation == "No" or "no":
-            todo_list.pop
+            del todo_list
             print(todo_list)
         if task_validation == "Yes" or "yes":
             print(todo_list)
