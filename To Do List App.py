@@ -7,13 +7,8 @@
 
 
 
-
-# : 
-# The user should only be allowed to quit when they press 'q'.
-
-
-
 todo_list = {}
+task = ()
 
 while True:
     menu = input("Press 1 to add task: \n" 
@@ -22,27 +17,29 @@ while True:
     "Press q to quit: \n")
     if menu == str(1):
         task = input("What is the name of your task? ")
-        priority = input("Is your task priority easy, medium, or hard? ")
-        todo_list[task] = priority
+        priority = input("Is your task priority low, medium, or hard? ")  
+        todo_list[task]=priority
         print(todo_list)
         task_validation = input("Is this correct? ")
         if task_validation == "No" or "no":
-            del todo_list[task]
+            todo_list.pop
             print(todo_list)
-        # if task_validation == "Yes"
-    # elif menu == str(2):
-    #     print(todo_list)
-    #     task_del = input("Which task do you wish to delete? ")
-    #     del todo_list[task_del]
-    #     print{todo_list}
-
-
-    # elif menu == 'q':
-    #     break
+        if task_validation == "Yes" or "yes":
+            print(todo_list)
+    elif menu == str(2):
+        print(todo_list)
+        task_del = input("Which task do you wish to delete? ")
+        del todo_list[task_del]
+    elif menu == str(3):
+        print(todo_list)
+    
+    
+    elif menu == 'q':
+        break
     
         
 
-    
+
 
 
 
