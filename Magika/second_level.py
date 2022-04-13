@@ -2,9 +2,17 @@ import random
 
 possible_actions = ["Fireball", "Frostbolt", "Lightningbolt", "Tornado"]
 
-# computer_action_2 = random.choice(possible_actions)
 
 def menu_2():
+    print("""
+    .___  ___. __ .__   __. __   .______    ______       _______.    _______.
+|   \/   ||  ||  \ |  ||  |  |   _  \  /  __  \     /       |   /       |
+|  \  /  ||  ||   \|  ||  |  |  |_)  ||  |  |  |   |   (----`  |   (----`
+|  |\/|  ||  ||  . `  ||  |  |   _  < |  |  |  |    \   \       \   \    
+|  |  |  ||  ||  |\   ||  |  |  |_)  ||  `--'  |.----)   |  .----)   |   
+|__|  |__||__||__| \__||__|  |______/  \______/ |_______/   |_______/    
+                                                                         
+    """)
     user_action_2 = input("""Choose a spell:
 
 Press 1 for Fireball
@@ -29,9 +37,7 @@ Press 4 for Tornado
     if user_action_2 == "4":
         user_action_2 = "Tornado"
         return user_action_2
-
-
-
+        
 def magika_level_2(user_action_2, computer_action_2):
     if user_action_2 == computer_action_2:
         print(f"Both wizards casted {user_action_2}. The spells canceled each other out! Quick, cast again!!")
@@ -68,7 +74,6 @@ def magika_level_2(user_action_2, computer_action_2):
         else:
             print("Their frostbolt froze you arms off. You quipped 'Tis but a scratch' before perishing.")
         return False
-user_action_2 = menu_2()
-
 computer_action_2 = random.choice(possible_actions)
+user_action_2 = menu_2()
 magika_level_2(user_action_2, computer_action_2)
