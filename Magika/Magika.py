@@ -1,6 +1,6 @@
-# Fireball > Frostbolt > Lightningbolt > Tornado > Fireball etc...
+# Fireball > Frostbolt > Lightningbolt > Tornado > Envenom
 
-emoji_list = [" 🔥", " ❄️", " ⚡", " 🌪️" ]
+emoji_list = [" 🔥", " ❄️", " ⚡", " 🌪️",]
 bot_possible_actions = ["Fireball" +  emoji_list[0], "Frostbolt" + emoji_list[1], "Lightningbolt" + emoji_list[2], "Tornado" + emoji_list[3]]
 
 
@@ -42,6 +42,15 @@ while game_running:
     computer_action = random.choice(bot_possible_actions)
     print(f"The computer casted {computer_action}\n")
     game_running = magika_level_1(user_action, computer_action)
+    if game_running == True:
+        emoji_list.append("🐍")
+        print("\nFrom your mighty battle you have learned a new spell!!\n")
+        print("Envenom learned!" +  emoji_list[4])
+        bot_possible_actions.append("Envenom" +  emoji_list[4])
+        user_action_2 = menu_2()
+        print(f"\nYou casted {user_action}\n")
+        print(f"The computer casted {computer_action}\n")
+        magika_level_2(user_action_2, bot_possible_actions)
     if game_running == False:
         replay = input("Would you like to play again?\n\nEnter Yes/No\n\n ")
         if replay == "Yes" or replay == "yes":
