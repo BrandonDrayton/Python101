@@ -1,7 +1,6 @@
 import random
 
-possible_actions = ["Fireball", "Frostbolt", "Lightningbolt", "Tornado"]
-
+bot_possible_actions_2 = ["Fireball", "Frostbolt", "Lightningbolt", "Tornado", "Earth Shock"]
 
 def menu_2():
     print("""
@@ -74,6 +73,6 @@ def magika_level_2(user_action_2, computer_action_2):
         else:
             print("Their frostbolt froze you arms off. You quipped 'Tis but a scratch' before perishing.")
         return False
-computer_action_2 = random.choice(possible_actions)
+computer_action_2 = random.choice(bot_possible_actions_2)
 user_action_2 = menu_2()
 magika_level_2(user_action_2, computer_action_2)
