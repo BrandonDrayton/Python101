@@ -41,19 +41,19 @@ while game_running:
     game_running = magika_level_1(user_action, computer_action)
     if game_running == True:
         slow_type("\nFrom your mighty battle you have learned a new spell!!\n")
-        print("Envenom learned! 🐍")
+        slow_type("Envenom learned! 🐍")
         bot_possible_actions.append("Envenom" +  "🐍")
         bot_possible_actions.append("Glachlan" +  "🔫")
         user_action_2 = menu_2()
         computer_action_2 = random.choice(bot_possible_actions)
-        print(f"\nYou casted {user_action_2}\n")
-        print(f"The computer casted {computer_action_2}\n")
+        slow_type(f"\nYou casted {user_action_2}\n")
+        slow_type(f"The computer casted {computer_action_2}\n")
         magika_level_2(user_action_2, computer_action_2)
     if game_running == False:
         replay = slow_type_input("Would you like to play again?\n\nEnter Yes/No\n\n ")
         if replay == "Yes" or replay == "yes":
             game_running = True
         else:
-            print("Thanks for playing. Have a magika day!")
+            slow_type("Thanks for playing. Have a magika day!")
             break
               
