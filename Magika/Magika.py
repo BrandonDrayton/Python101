@@ -34,7 +34,7 @@ You are a harry wizard trying to get home. Magic users stand in your way. You mu
 
 game_running = True
 while game_running:
-    user_action = menu()
+    user_action = menu() 
     slow_type(f"\nYou casted {user_action}\n")
     computer_action = random.choice(bot_possible_actions)
     slow_type(f"The computer casted {computer_action}\n")
