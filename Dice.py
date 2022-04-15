@@ -21,8 +21,14 @@ def roll (number, user_number):
     print("It's rolling...")
     print("It's a " + str(result))
     
-print("Let's roll dice!")
-user_number = int(input("How many sides should the dice have? Enter a number between 2 and 20: "))
-number = 1
+# def roll_many_dice(number, user_number, user_dice_number):
+#     result = user_dice_number(number)(randint((number + 1), user_number))
+#     print("It's rolling...")
+#     print("It's a " + str(result))
 
-roll(number, user_number)
+# print("Let's roll dice!")
+# user_dice_number = int(input("How many dice do you want to roll? "))
+# user_number = int(input("How many sides should the dice have? Enter a number between 2 and 20: "))
+# number = 1
+
+# roll_many_dice(number, user_number, user_dice_number)

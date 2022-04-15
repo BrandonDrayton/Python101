@@ -7,7 +7,7 @@
 
 
 
-todo_list = {}
+todo_list = []
 task = ()
 
 while True:
